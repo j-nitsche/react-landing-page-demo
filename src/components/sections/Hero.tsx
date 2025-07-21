@@ -9,7 +9,7 @@ export const Hero = () => {
 
   const [emailSent, setEmailSent] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setEmailSent(true);
     setTimeout(() => setEmailSent(false), 3000); 
